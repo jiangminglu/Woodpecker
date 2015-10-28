@@ -185,7 +185,8 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
         if (chatType == EaseConstant.CHATTYPE_SINGLE) { // 单聊
             // 设置标题
             if(EaseUserUtils.getUserInfo(toChatUsername) != null){
-                titleBar.setTitle(EaseUserUtils.getUserInfo(toChatUsername).getNick());
+//                titleBar.setTitle(EaseUserUtils.getUserInfo(toChatUsername).getNick());
+                titleBar.setTitle("啄木鸟");
             }
             titleBar.setRightImageResource(R.drawable.ease_mm_title_remove);
         } else {
