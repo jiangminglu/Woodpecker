@@ -2,12 +2,12 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+             android:background="#ffffff"
              tools:context="com.sk.woodpecker.fragment.ServiceFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.tuesda.walker.circlerefresh.CListView
+        android:id="@+id/service_listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="service"/>
+        android:layout_height="match_parent"/>
 
 </FrameLayout>

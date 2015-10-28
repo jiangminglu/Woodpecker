@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="6dp"
+        >
+
+        <TextView
+            android:id="@+id/service_item_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="60dp"
+            android:singleLine="true"
+            android:text="头发红斑,很多的头皮屑，用手扣就是整块的，很多很多，不知道怎么办"
+            android:textColor="#000000"
+
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/service_item_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="100dp"
+            android:singleLine="true"
+            android:text="10月22日  |  男科"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/service_item_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="新回复"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+</FrameLayout>

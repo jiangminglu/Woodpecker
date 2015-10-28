@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/luffy/Documents/work/sportscool/travelnotes-android/viewpagerindicator/src/main/assets"/></dataSet><dataSet config="debug"><source path="/Users/luffy/Documents/work/sportscool/travelnotes-android/viewpagerindicator/src/debug/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/luffy/Documents/github/Woodpecker/viewpagerindicator/src/main/assets"/></dataSet><dataSet config="debug"><source path="/Users/luffy/Documents/github/Woodpecker/viewpagerindicator/src/debug/assets"/></dataSet></merger>
