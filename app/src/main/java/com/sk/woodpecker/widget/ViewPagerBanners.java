@@ -71,6 +71,7 @@ public class ViewPagerBanners extends LinearLayout {
 	 */
 	public ViewPagerBanners(Context context) {
 		super(context);
+        init(context);
 	}
 
 	/**
@@ -79,31 +80,34 @@ public class ViewPagerBanners extends LinearLayout {
 	 */
 	public ViewPagerBanners(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		mContext = context;
-		mScale = context.getResources().getDisplayMetrics().density;
-		LayoutInflater.from(context).inflate(R.layout.ad_cycle_view, this);
-		mAdvPager = (ViewPager) findViewById(R.id.adv_pager);
-		mAdvPager.setOnPageChangeListener(new GuidePageChangeListener());
-		mAdvPager.setOnTouchListener(new OnTouchListener() {
-
-			@Override
-			public boolean onTouch(View v, MotionEvent event) {
-				switch (event.getAction()) {
-				case MotionEvent.ACTION_UP:
-					// 开始图片滚动
-					startImageTimerTask();
-					break;
-				default:
-					// 停止图片滚动
-					stopImageTimerTask();
-					break;
-				}
-				return false;
-			}
-		});
-		// 滚动图片右下指示器视图
-		mGroup = (ViewGroup) findViewById(R.id.viewGroup);
+        init(context);
 	}
+    private void init(Context context){
+        mContext = context;
+        mScale = context.getResources().getDisplayMetrics().density;
+        LayoutInflater.from(context).inflate(R.layout.ad_cycle_view, this);
+        mAdvPager = (ViewPager) findViewById(R.id.adv_pager);
+        mAdvPager.setOnPageChangeListener(new GuidePageChangeListener());
+        mAdvPager.setOnTouchListener(new OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_UP:
+                        // 开始图片滚动
+                        startImageTimerTask();
+                        break;
+                    default:
+                        // 停止图片滚动
+                        stopImageTimerTask();
+                        break;
+                }
+                return false;
+            }
+        });
+        // 滚动图片右下指示器视图
+        mGroup = (ViewGroup) findViewById(R.id.viewGroup);
+    }
 
 	/**
 	 * 装填图片数据

@@ -96,13 +96,17 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if (view == homeConsultLayout) {
-            if(robotList.size()>0){
+            if (robotList.size() > 0) {
                 Intent intent = new Intent();
                 intent.setClass(mContext, ChatActivity.class);
                 intent.putExtra("userId", robotList.get(0).getUsername());
                 startActivity(intent);
+            }else {
+                Intent intent = new Intent();
+                intent.setClass(mContext, ChatActivity.class);
+                intent.putExtra("userId", "啄木鸟");
+                startActivity(intent);
             }
-
         }
     }
 
@@ -139,6 +143,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         });
 
     }
+
     private void asyncGetRobotNamesFromServer(final EMValueCallBack<List<EMContact>> callback) {
         new Thread(new Runnable() {
 

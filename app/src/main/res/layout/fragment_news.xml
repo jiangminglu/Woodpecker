@@ -1,14 +1,29 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="#ffffff"
-             tools:context=".fragment.NewsFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f0eff5"
+              android:orientation="vertical"
+              tools:context="com.sk.woodpecker.fragment.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f5f6f7"
+        android:gravity="center"
+        android:text="健康资讯"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    <com.tuesda.walker.circlerefresh.CListView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="news"/>
+        android:id="@+id/news_listview"
+        ></com.tuesda.walker.circlerefresh.CListView>
 
-</FrameLayout>
+
+
+
+
+
+</LinearLayout>

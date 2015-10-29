@@ -1,6 +1,7 @@
 package com.tuesda.walker.circlerefresh;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.View;
@@ -47,8 +48,21 @@ public class CListView extends RelativeLayout {
         this.onCircleLoadListener = loadListener;
     }
 
+    public void setDividerHeight(int height){
+        this.listView.setDividerHeight(height);
+    }
+    public void setDivider(Drawable divider){
+        this.listView.setDivider(divider);
+    }
+    public void setBackground(Drawable drawable){
+        this.listView.setBackground(drawable);
+    }
     public void setOnRefreshListener(CircleRefreshLayout.OnCircleRefreshListener listener) {
         this.circleRefreshLayout.setOnRefreshListener(listener);
+    }
+
+    public void addHeadView(View view) {
+        this.listView.addHeaderView(view);
     }
 
     public void setAdapter(BaseAdapter adapter) {
@@ -61,7 +75,7 @@ public class CListView extends RelativeLayout {
             public void run() {
                 circleRefreshLayout.finishRefreshing();
             }
-        },2*1000);
+        }, 2 * 1000);
     }
 
     public void finishLoading() {
