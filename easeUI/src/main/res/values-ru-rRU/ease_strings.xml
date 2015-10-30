@@ -12,7 +12,6 @@
     <string name="attach_take_pic">Сделать фото</string>
     <string name="attach_location">Местоположение</string>
     <string name="attach_file">Документ</string>
-    <string name="attach_voice_call">Голосовой вызов</string>
     <string name="user_card">Визитная карточка</string>
     <string name="move_up_to_cancel">Провести вверх для отмены отправки</string>
     <string name="release_to_cancel">Отпустить палец для отмены отправки</string>

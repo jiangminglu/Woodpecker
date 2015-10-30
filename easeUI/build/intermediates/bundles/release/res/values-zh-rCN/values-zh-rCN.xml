@@ -125,8 +125,6 @@
     <string name="attach_smile">表情</string>
     <string name="attach_take_pic">拍照</string>
     <string name="attach_video">视频</string>
-    <string name="attach_video_call">视频通话</string>
-    <string name="attach_voice_call">语音电话</string>
     <string name="back">返回</string>
     <string name="be_removing">正在移出...</string>
     <string name="being_added">正在添加...</string>

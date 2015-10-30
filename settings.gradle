@@ -1,2 +1,4 @@
-include ':app', ':viewpagerindicator', ':circlerefresh'
+include ':app'
 include ':easeUI'
+include ':viewpagerindicator'
+include ':circlerefresh'
